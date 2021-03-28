@@ -18,6 +18,8 @@ import java.util.stream.Stream;
 
 import com.entity.*;
 import com.entity.CardProperties.CardsNumberComparator;
+import com.enums.CardSuit;
+import com.enums.HandValues;
 
 public class PokerCardManager {
 
@@ -159,7 +161,7 @@ public class PokerCardManager {
 														 .stream()
 														 .max((e1, e2) ->Integer.compare(e1.getKey().valueID, e2.getKey().valueID))
 														 .get();
-//			System.out.println(maxHandValue.getValue());
+
 			return maxHandValue.getKey();
 		}
 	}

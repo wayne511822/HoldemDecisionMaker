@@ -30,6 +30,18 @@ public class CardProperties {
 				return Integer.compare(o1.number, o2.number);
 			}
 		}
+		
+		public Card max(Card o1, Card o2) {
+			
+			if (compare(o1, o2) == 1) {
+				return o1;
+				
+			}else if (compare(o1, o2) == -1) {
+				return o2;
+				
+			}
+			return o1;
+		}
 	}
 	
 	public static class CardsNumberComparator implements Comparator<Integer> {

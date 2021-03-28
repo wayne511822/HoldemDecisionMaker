@@ -1,5 +1,7 @@
 package com.entity;
 
+import com.enums.CardSuit;
+
 public class Card {
 
 	public int number;

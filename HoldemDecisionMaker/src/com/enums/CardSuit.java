@@ -1,4 +1,4 @@
-package com.entity;
+package com.enums;
 
 public enum CardSuit {
 
